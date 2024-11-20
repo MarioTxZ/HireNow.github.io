@@ -1,0 +1,116 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('img/adria-sanchez-roque-0THnhIeoXAU-unsplash.jpg') no-repeat center center fixed; /* Imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Contenedor principal */
+.container {
+    background: #fff;
+    width: 90%;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contenedor del formulario */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Estilo para el h2 */
+.form-container h2 {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #3498db; /* Color del texto */
+}
+
+/* Estilo para los párrafos */
+.form-container p {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #333; /* Color del texto */
+}
+
+/* Estilo para los labels */
+.form-container label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333; /* Color del texto */
+    font-weight: bold;
+}
+
+/* Estilo para los inputs y selects */
+.form-container input, .form-container select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #dcdde1;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333; /* Color del texto */
+}
+
+/* Estilo para los botones */
+button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #3498db;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Estilo para el contenedor de login social */
+.social-login {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.social-login p {
+    margin-bottom: 0.5rem;
+}
+
+.google-btn, .facebook-btn {
+    background-color: #4285F4; /* Color de Google */
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+}
+
+.facebook-btn {
+    background-color: #3b5998; /* Color de Facebook */
+}

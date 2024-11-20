@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido - Accede y Desarrolla</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(api/src/img/adria-sanchez-roque-0THnhIeoXAU-unsplash.jpg);
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(255, 255, 255);
+            padding: 60px;
+            border-radius: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            max-width: 800px;
+            width: 90%;
+            gap: 40px;
+        }
+
+        .welcome-section,
+        .links-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .welcome-section {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #3b83bd;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 250px;
+            margin-bottom: 40px;
+            transition: transform 0.3s;
+        }
+
+        .logo:hover {
+            transform: scale(1.1);
+        }
+
+        .links-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 100px;
+            /* Espacio aumentado entre los botones */
+        }
+
+        .links a {
+            display: inline-block;
+            font-size: 1.2em;
+            color: #434343;
+            text-decoration: none;
+            padding: 10px 28px;
+            border: 2px solid #26489e;
+            border-radius: 8px;
+            transition: background-color 0.3s, color 0.3s;
+            width: 100%;
+            text-align: center;
+            max-width: 200px;
+        }
+
+        .links a:hover {
+            background-color: #26489e;
+            color: rgb(62, 62, 62);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="welcome-section">
+            <img src="api/src/img/Hir.png" alt="HireNow" class="logo">
+            <h1>¡Bienvenid@!</h1>
+            <p>Conectando talentos con oportunidades</p>
+        </div>
+        <div class="links-section">
+            <div class="links">
+                <a href="api/src/signupa.html">Sign Up</a>
+                <br><br>
+                <a href="api/src/signin.html">Sign In</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

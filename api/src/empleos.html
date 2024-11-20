@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sección de Empleos</title>
+    <style>
+        /* Reseteo de márgenes y rellenos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Fondo completo y centrado */
+        body,
+        html {
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background: url(img/adria-sanchez-roque-0THnhIeoXAU-unsplash.jpg);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 20px;
+        }
+
+        /* Contenedor principal */
+        .container {
+            width: 100%;
+            max-width: 3000%;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            padding: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            position: relative;
+        }
+
+        /* Contenedor para el logo y el botón de perfil en la parte superior derecha */
+        .top-right {
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Estilo del logo en la parte superior derecha */
+        .top-right img.logo {
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        /* Botón de perfil con ícono */
+        .top-right .profile-button {
+            padding: 10px;
+            background-color: #2980b9;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .top-right .profile-button:hover {
+            background-color: #af9755;
+        }
+
+        /* Estilo del ícono dentro del botón de perfil */
+        .top-right .profile-button svg {
+            width: 20px;
+            height: 20px;
+            fill: white;
+        }
+
+        /* Título de la sección de empleos */
+        .title {
+            display: flex;
+            align-items: center;
+            font-size: 2.5em;
+            color: #2980b9;
+            margin: 20px 0;
+            justify-content: center;
+        }
+
+        .title img {
+            width: 120px;
+            margin-right: 10px;
+        }
+
+        /* Estilo del buscador de empleo */
+        .search-container {
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        input[type="text"] {
+            width: 70%;
+            padding: 15px;
+            border: 2px solid #2980b9;
+            border-radius: 5px;
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+
+        /* Botones de ofertas y agregar empleo */
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+        }
+
+        .button {
+            padding: 10px 10px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #2980b9;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            flex: 1;
+            margin: 0 10px;
+            text-align: center;
+        }
+
+        .button:hover {
+            background-color: #af9755;
+        }
+
+        /* Estilo del enlace "Atrás" en la esquina inferior derecha del contenedor */
+        .back-link {
+            font-size: 1.3em;
+            color: #2980b9;
+            text-decoration: none;
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+            color: #2980b9;
+        }
+
+        /* Alineación de todo el contenido en el centro */
+        .content {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+
+        function goToProfile() {
+            window.location.href = 'perfil.html';
+        }
+
+        function goToAgregarEmpleo() {
+            window.location.href = 'agregarEmpleo.html';
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Contenedor para el logo y el botón de perfil en la parte superior derecha -->
+        <div class="top-right">
+            <img src="img/Hir.png" alt="Logo" class="logo">
+            <button class="profile-button" onclick="goToProfile()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                    <path
+                        d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14c-2.5 0-4.71-1.28-6-3.22.03-1.99 4-3.08 6-3.08 2.01 0 5.97 1.09 6 3.08C16.71 17.72 14.5 19 12 19z" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="content">
+            <!-- Título de la sección de empleos -->
+            <div class="title">
+                <img src="img/papel-de-empresario-de-la-solicitud-de-empleo.png" alt="Logo Empleos">
+                <span>Empleos</span>
+            </div>
+
+            <!-- Buscador de empleo -->
+            <div class="search-container">
+                <input type="text" placeholder="Buscar empleos..." aria-label="Buscar empleos">
+                <button class="button">Buscar</button>
+            </div>
+
+        </div>
+
+        <!-- Enlace de regresar en la esquina inferior derecha del contenedor -->
+        <a href="secciones.html" class="back-link">Atrás</a>
+    </div>
+</body>
+
+</html>
